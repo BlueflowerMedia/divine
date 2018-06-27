@@ -24,27 +24,32 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blueflowermedia' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav id="site-navigation" class="main-navigation fixed container-navbar">
-      <!-- navbar left -->
-			<div class="nav-left">
-        <?php the_custom_logo(); ?>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3 class="site-title"><?php bloginfo( 'name' ); ?></h3></a>
-      </div>
-      <!-- navbar middle -->
-      <div class="nav-middle">
-        <?php
-          wp_nav_menu( array(
-            'theme_location' => 'menu-1',
-            'menu_id'        => 'primary-menu',
-          ) );
-        ?>
-      </div>
-      <!-- navbar right -->
-      <div class="nav-right">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blueflowermedia' ); ?></button>
-				<a href=""><button class="nav-contact" type="button" name="button">Contact Us</button></a>
-      </div>
+		<nav class="fixed">
+
+		  <div class="nav-container">
+		    <div id="item1" class="nav-item left mobile-tablet-hide">1</div>
+		    <div id="item2" class="nav-item middle">2</div>
+		    <div id="item3" class="nav-item right">3</div>
+
+				<div id="item4" class="nav-item right">
+	        <div class="hamburger" id="hamburger-arowL">
+	          <span class="line"></span>
+	          <span class="line"></span>
+	          <span class="line"></span>
+	        </div>
+				</div>
+
+
+		  </div>
+
+
+
 		</nav>
+
+		<div class="content">
+		  <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque, necessitatibus porro, accusantium laborum est beatae, sunt praesentium!</h1>
+		</div>
+
 	</header>
 
 	<div id="content" class="site-content">

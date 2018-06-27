@@ -17,7 +17,7 @@
 	<footer id="colophon" class="site-footer">
     <div class="container flex-row">
       <div class="footer-left flex1">
-        <p>&copy; <?php the_time('Y') ?>. All rights reserved. BlueFlower Media</p>
+        <p>&copy; <?php the_time('Y') ?>. All rights reserved. Divine Photography</p>
       </div>
       <div class="footer-right flex1">
       </div>
