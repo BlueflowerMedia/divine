@@ -1312,11 +1312,11 @@ button.nav-contact {
     background: white; }
 
 .hamburger .line {
-  width: 50px;
-  height: 5px;
+  width: 25px;
+  height: 3px;
   background-color: white;
   display: block;
-  margin: 8px auto;
+  margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
@@ -1366,40 +1366,37 @@ button.nav-contact {
   -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg); }
 
-#hamburger-arowR.is-active .line:nth-child(1),
-#hamburger-arowR.is-active .line:nth-child(3) {
-  width: 40px; }
+#hamburger-arrow-left.is-active .line:nth-child(1),
+#hamburger-arrow-left.is-active .line:nth-child(3) {
+  width: 15px; }
 
-#hamburger-arowR.is-active .line:nth-child(1) {
-  -webkit-transform: translateX(-10px) rotate(-45deg);
-  -ms-transform: translateX(-10px) rotate(-45deg);
-  -o-transform: translateX(-10px) rotate(-45deg);
-  transform: translateX(-10px) rotate(-45deg); }
+#hamburger-arrow-left.is-active .line:nth-child(1) {
+  -webkit-transform: translate(-7px, 2px) rotate(-45deg);
+  -ms-transform: translate(-7px, 2px) rotate(-45deg);
+  -o-transform: translate(-7px, 2px) rotate(-45deg);
+  transform: translate(-7px, 2px) rotate(-45deg); }
 
-#hamburger-arowR.is-active .line:nth-child(3) {
-  -webkit-transform: translateX(-10px) rotate(45deg);
-  -ms-transform: translateX(-10px) rotate(45deg);
-  -o-transform: translateX(-10px) rotate(45deg);
-  transform: translateX(-10px) rotate(45deg); }
+#hamburger-arrow-left.is-active .line:nth-child(3) {
+  -webkit-transform: translate(-7px, -2px) rotate(45deg);
+  -ms-transform: translate(-7px, -2px) rotate(45deg);
+  -o-transform: translate(-7px, -2px) rotate(45deg);
+  transform: translate(-7px, -2px) rotate(45deg); }
 
-#hamburger-arowL.is-active .line:nth-child(1),
-#hamburger-arowL.is-active .line:nth-child(3) {
-  width: 40px; }
+#hamburger-arrow-right.is-active .line:nth-child(1),
+#hamburger-arrow-right.is-active .line:nth-child(3) {
+  width: 15px; }
 
-#hamburger-arowL.is-active .line:nth-child(1) {
-  -webkit-transform: translateX(10px) rotate(45deg);
-  -ms-transform: translateX(10px) rotate(45deg);
-  -o-transform: translateX(10px) rotate(45deg);
-  transform: translateX(10px) rotate(45deg); }
+#hamburger-arrow-right.is-active .line:nth-child(1) {
+  -webkit-transform: translate(7px, 2px) rotate(45deg);
+  -ms-transform: translate(7px, 2px) rotate(45deg);
+  -o-transform: translate(7px, 2px) rotate(45deg);
+  transform: translate(7px, 2px) rotate(45deg); }
 
-#hamburger-arowL.is-active .line:nth-child(3) {
-  -webkit-transform: translateX(10px) rotate(-45deg);
-  -ms-transform: translateX(10px) rotate(-45deg);
-  -o-transform: translateX(10px) rotate(-45deg);
-  transform: translateX(10px) rotate(-45deg); }
-
-h1 {
-  font-size: 10rem; }
+#hamburger-arrow-right.is-active .line:nth-child(3) {
+  -webkit-transform: translate(7px, -2px) rotate(-45deg);
+  -ms-transform: translate(7px, -2px) rotate(-45deg);
+  -o-transform: translate(7px, -2px) rotate(-45deg);
+  transform: translate(7px, -2px) rotate(-45deg); }
 
 nav {
   display: block;
@@ -1419,8 +1416,7 @@ nav {
   .nav-container .nav-item {
     flex: 1;
     display: flex;
-    align-items: center;
-    border-right: 1px solid white; }
+    align-items: center; }
     @media (max-width: 1024px) {
       .nav-container .nav-item.mobile-tablet-hide {
         display: none; } }
@@ -1438,14 +1434,14 @@ nav {
       justify-content: flex-end; }
 
 .mobile-navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: yellow;
   z-index: 9998;
-  transition: transform 0.2s cubic-bezier(0.8, 0.7, 0.9, 1.2); }
+  transition: transform 0.5s cubic-bezier(1, 0.01, 0.47, 0.99); }
   .mobile-navbar.left {
     transform: translateX(-100%); }
   .mobile-navbar.right {
@@ -1470,3 +1466,24 @@ nav .nav-container #item4 {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em; }
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden; }
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0; }
+
+.contenttt {
+  font-size: 30rem; }

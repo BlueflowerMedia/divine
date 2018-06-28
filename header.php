@@ -25,40 +25,34 @@
 
 	<header id="masthead" class="site-header">
 		<nav class="fixed">
-
 		  <div class="nav-container">
+
 		    <div id="item1" class="nav-item left mobile-tablet-hide">1</div>
 		    <div id="item2" class="nav-item middle">2</div>
 		    <div id="item3" class="nav-item right">3</div>
 
 				<div id="item4" class="nav-item right">
-	        <div class="hamburger" id="hamburger-arowL">
+	        <div class="hamburger" id="hamburger-arrow-right">
 	          <span class="line"></span>
 	          <span class="line"></span>
 	          <span class="line"></span>
 	        </div>
 				</div>
 
-
 		  </div>
-
-
 		</nav>
-		<div class="mobile-navbar top">
+
+		<div class="mobile-navbar right">
       <ul>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
-        <li>dsadsa</li>
+        <li>cool</li>
+        <li>cool</li>
+        <li>cool</li>
+        <li>cool</li>
+        <li>cool</li>
+        <li>cool</li>
       </ul>
     </div>
 
-		<div class="content">
-		  <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque, necessitatibus porro, accusantium laborum est beatae, sunt praesentium!</h1>
-		</div>
 
 	</header>
 
