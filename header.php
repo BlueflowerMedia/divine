@@ -43,8 +43,18 @@
 		  </div>
 
 
-
 		</nav>
+		<div class="mobile-navbar top">
+      <ul>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+        <li>dsadsa</li>
+      </ul>
+    </div>
 
 		<div class="content">
 		  <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo atque, necessitatibus porro, accusantium laborum est beatae, sunt praesentium!</h1>
