@@ -1,0 +1,44 @@
+#section-contact {
+  .container {
+    h1 {
+      text-align: center;
+      padding: 0 0 20px 0;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .contact-information {
+    background-color: $gold;
+    position: relative;
+    img.white-triangle {
+      @include position(absolute, $top: 0, $right: 0);
+      transform: rotate(20deg);
+      height: 120%;
+    }
+    i {
+      color: $black;
+      font-size: 6rem;
+      align-items: center;
+      padding: 35px;
+    }
+    .info {
+      text-align: left;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+  }
+
+  .contact-map {
+    min-width: 280px;
+  }
+  // part contact and map
+
+  #contact-map .container {
+    .contact-info,
+    .contact-map {
+      min-width: 300px;
+    }
+  }
+}

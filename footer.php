@@ -13,8 +13,7 @@
 
 	</div><!-- #content -->
 
-	<div class="margin-for-footer"></div>
-	<footer id="colophon" class="site-footer">
+<!-- 	<footer id="colophon" class="site-footer">
     <div class="container flex-row">
       <div class="footer-left flex1">
         <p>&copy; <?php the_time('Y') ?>. All rights reserved. Divine Photography</p>
@@ -23,7 +22,7 @@
       </div>
     </div>
 </footer>
-
+ -->
 <?php wp_footer(); ?>
 
 </body>

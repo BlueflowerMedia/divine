@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: divine
 Theme URI: http://underscores.me/
 Author: Blueflowermedia
@@ -24,8 +24,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
-@import url("//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+@import url("//fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+@import url("//fonts.googleapis.com/css?family=Oswald:400,500,600");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1213,7 +1213,7 @@ html {
 p, a {
   font-size: 1rem;
   margin-bottom: 1rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Oswald", serif;
   color: rgba(0, 0, 0, 0.9);
   line-height: 1.6rem; }
 
@@ -1221,10 +1221,10 @@ a {
   margin: 0; }
 
 nav a {
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Playfair Display", sans-serif; }
 
 h1, h2, h3, h4 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   margin-bottom: 0rem;
   font-weight: 700;
   line-height: 1.2;
@@ -1239,7 +1239,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  font-family: "Roboto Slab", serif; }
+  font-family: "Oswald", serif; }
 
 h4 {
   font-size: 1.414rem; }
@@ -1314,7 +1314,7 @@ button.nav-contact {
 .hamburger .line {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: red;
   display: block;
   margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1401,18 +1401,14 @@ button.nav-contact {
 nav {
   display: block;
   width: 100%;
-  background-color: blue;
   z-index: 9999; }
-  nav.fixed {
-    position: fixed; }
 
 .nav-container {
   display: flex;
   flex-flow: row nowrap;
   margin: 0 auto;
   max-width: 1200px;
-  box-sizing: border-box;
-  padding: 25px 10px; }
+  box-sizing: border-box; }
   .nav-container .nav-item {
     flex: 1;
     display: flex;
@@ -1432,6 +1428,58 @@ nav {
       justify-content: center; }
     .nav-container .nav-item.right {
       justify-content: flex-end; }
+  .nav-container #item2 a {
+    text-decoration: none; }
+  .nav-container #item2 h3 {
+    min-width: 400px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", sans-serif;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; }
+  .nav-container .menu-partial {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 5px; }
+    .nav-container .menu-partial li {
+      display: block;
+      margin: 0 40px; }
+      .nav-container .menu-partial li a {
+        font-size: 1rem;
+        text-decoration: none;
+        margin: 5px; }
+        .nav-container .menu-partial li a.main-items {
+          font-size: 1rem;
+          font-weight: 500;
+          font-family: "Oswald", serif; }
+          .nav-container .menu-partial li a.main-items:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 10%;
+            width: 100%; }
+
+ul.menu-partial > li > a {
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer; }
+  ul.menu-partial > li > a:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: 0;
+    background: #EBE6C3;
+    z-index: -12;
+    transition: transform 0.3s cubic-bezier(0.11, 0.7, 1, 1.2); }
+  ul.menu-partial > li > a:hover:after {
+    transform: scaleY(0.25) translateY(25px);
+    box-shadow: none; }
 
 .mobile-navbar {
   position: fixed;
@@ -1456,34 +1504,296 @@ nav {
 nav .nav-container #item1 {
   flex: 2; }
 nav .nav-container #item2 {
-  flex: 3; }
-nav .nav-container #item3 {
   flex: 1; }
-nav .nav-container #item4 {
+nav .nav-container #item3 {
   flex: 2; }
+nav .nav-container #item4 {
+  flex: 1; }
 
 .mobile-navbar {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.ml10 {
+#section-top {
   position: relative;
-  font-weight: 900;
-  font-size: 4em; }
+  height: 96vh;
+  padding: 0; }
+  #section-top .black {
+    height: 75%;
+    width: 60%;
+    background-color: #191919;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+    @media (min-width: 760px) and (max-width: 1023px) {
+      #section-top .black {
+        display: none; } }
+    @media (max-width: 760px) {
+      #section-top .black {
+        display: none; } }
+  #section-top .title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    margin: 65px 20px 0 20px;
+    padding: 0; }
+    #section-top .title img::after {
+      width: 100%;
+      padding: 0; }
+  #section-top .txt-wrapper {
+    display: flex;
+    position: relative;
+    height: 100%; }
+  #section-top .txt-part {
+    margin-top: 7%; }
+  #section-top .ml10 {
+    font-size: 4em;
+    margin-bottom: 100px; }
+  #section-top .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    color: black;
+    background-color: white; }
+  #section-top .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0; }
+  #section-top .service-a-tag {
+    background-color: #EBE6C3;
+    font-size: 1.2em;
+    z-index: 1234;
+    padding: 3px 8px; }
+  #section-top .photo-wrapper {
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    z-index: 123; }
+    @media (min-width: 760px) and (max-width: 1023px) {
+      #section-top .photo-wrapper {
+        left: 20%;
+        width: 60%;
+        height: 75%; } }
+    @media (max-width: 760px) {
+      #section-top .photo-wrapper {
+        left: 22%;
+        width: 70%;
+        height: 75%; } }
 
-.ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden; }
+#section-about .container {
+  margin: 0;
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+#section-about h2 {
+  color: #EBE6C3; }
+#section-about .about-image {
+  padding: 5%; }
+  #section-about .about-image img {
+    width: 70%; }
 
-.ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0; }
+#section-services .container {
+  padding: 0;
+  margin: 0; }
+  #section-services .container h1 {
+    text-align: center; }
+  #section-services .container .service-list ul {
+    text-decoration: none;
+    justify-content: center; }
+    #section-services .container .service-list ul li {
+      color: #EBE6C3;
+      margin: 0 20px;
+      padding: 0 10px;
+      text-align: left; }
+      #section-services .container .service-list ul li a {
+        font-family: "Playfair Display", sans-serif;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600; }
+      @media (max-width: 760px) {
+        #section-services .container .service-list ul li {
+          text-align: center; } }
 
-.contenttt {
-  font-size: 30rem; }
+#section-professional .pro-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-professional .pro-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-professional .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-professional .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-id .id-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-id .id-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-id .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-id .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-family .family-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-family .family-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-family .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-family .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-wedding .wedding-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-wedding .wedding-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-wedding .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-wedding .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-fine-art .fine-art-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-fine-art .fine-art-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-fine-art .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-fine-art .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-photo-restoration .photo-restoration-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-photo-restoration .photo-restoration-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-photo-restoration .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-photo-restoration .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-modelling .modelling-top {
+  height: 350px;
+  background-image: url("./images/placeholders/home-portraits.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-modelling .modelling-top h1 {
+    background-color: white;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 3px 8px; }
+#section-modelling .part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: right; }
+#section-modelling .part-pics img {
+  height: 150px;
+  width: auto;
+  margin: 5px; }
+
+#section-contact .container h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0; }
+#section-contact .contact-information {
+  background-color: #EBE6C3;
+  position: relative; }
+  #section-contact .contact-information img.white-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(20deg);
+    height: 120%; }
+  #section-contact .contact-information i {
+    color: #191919;
+    font-size: 6rem;
+    align-items: center;
+    padding: 35px; }
+  #section-contact .contact-information .info {
+    text-align: left; }
+    #section-contact .contact-information .info p {
+      font-size: 1.3rem; }
+#section-contact .contact-map {
+  min-width: 280px; }
+#section-contact #contact-map .container .contact-info,
+#section-contact #contact-map .container .contact-map {
+  min-width: 300px; }

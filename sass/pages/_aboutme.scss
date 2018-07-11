@@ -1,0 +1,17 @@
+#section-about {
+	.container {
+		margin: 0;
+		background-image: url("./images/triangle-bg.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	h2 {
+		color: $gold;
+	}
+	.about-image {
+		padding: 5%;
+		img {
+			width: 70%;
+		}
+	}
+}

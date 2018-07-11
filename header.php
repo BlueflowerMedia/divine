@@ -9,6 +9,12 @@
  * @package blueflowedmedia
  */
 
+
+ $aboutme = get_permalink(get_page_by_path( 'aboutme' ));
+ $portfolio = get_permalink(get_page_by_path( 'Portfolio' ));
+ $services = get_permalink(get_page_by_path( 'services' ));
+ $contact = get_permalink(get_page_by_path( 'contact' ));
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -27,29 +33,41 @@
 		<nav class="fixed">
 		  <div class="nav-container">
 
-		    <div id="item1" class="nav-item left mobile-tablet-hide">1</div>
-		    <div id="item2" class="nav-item middle">2</div>
-		    <div id="item3" class="nav-item right">3</div>
+		    <div id="item1" class="nav-item left">
+          <ul class="menu-partial">
+      			<li><a class="main-items" href="<?php echo $aboutme; ?>">BIO</a></li>
+      			<li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO</a></li>
+      		</ul>
+        </div>
 
-				<div id="item4" class="nav-item right">
-	        <div class="hamburger" id="hamburger-arrow-right">
-	          <span class="line"></span>
-	          <span class="line"></span>
-	          <span class="line"></span>
-	        </div>
-				</div>
+		    <div id="item2" class="nav-item middle">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
+        </div>
 
+		    <div id="item3" class="nav-item right">
+          <ul class="menu-partial">
+        		<li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
+        		<li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
+        	</ul>
+        </div>
+<!--
+        <div id="item4" class="nav-item right desktop-hide">
+          <div class="hamburger" id="hamburger-arrow-right">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+ -->
 		  </div>
 		</nav>
 
 		<div class="mobile-navbar right">
       <ul>
-        <li>cool</li>
-        <li>cool</li>
-        <li>cool</li>
-        <li>cool</li>
-        <li>cool</li>
-        <li>cool</li>
+        <li>BIO</li>
+        <li>PORTFOLIO</li>
+        <li>SERVICES</li>
+        <li>CONTACT</li>
       </ul>
     </div>
 

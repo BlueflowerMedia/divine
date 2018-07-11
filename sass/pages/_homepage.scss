@@ -1,24 +1,95 @@
-.ml10 {
+
+// MAIN PAGE
+#section-top {
   position: relative;
-  font-weight: 900;
-  font-size: 4em;
-}
+  height: 96vh;
+  padding: 0;
 
-.ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
+  .black {
+    height: 75%;
+    width: 60%;
+    background-color: $black;
+    @include position(absolute, $bottom: 0, $right: 0);
+    z-index: -1;
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
 
-.ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
-}
+  .title img {
+    @include position(absolute, $top: 0, $left: 0);
+    z-index: 12;
+    margin: 65px 20px 0 20px;
+    padding: 0;
+    &::after {
+      width: 100%;
+      padding: 0;
+    }
+  }
 
-.contenttt {
-	font-size: 30rem;
+  .txt-wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
+
+  .txt-part {
+    margin-top: 7%;
+  }
+
+  // TEXT-ANIMATION: text-wrapper ----------
+  .ml10 {
+    font-size: 4em;
+    margin-bottom: 100px;
+  }
+  .ml10 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-right: 0.5em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+    color: black;
+    background-color: white;
+  }
+  .ml10 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+  // ------------------------------------------
+
+
+  .service-a-tag {
+    background-color: $gold;
+    font-size: 1.2em;
+    z-index: 1234;
+    padding: 3px 8px;
+  }
+
+  .photo-wrapper {
+    width: 65%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 26%;
+    z-index: 123;
+    // margin-left: -100px;
+    @include tablet {
+      left: 20%;
+      width: 60%;
+      height: 75%;
+    }
+    @include mobile {
+      left: 22%;
+      width: 70%;
+      height: 75%;
+    }
+  }
+
+
 }
