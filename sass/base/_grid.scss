@@ -53,3 +53,86 @@
 		flex: 4;
 	}
 }
+
+// Responsive properties
+
+
+// show (only) elements
+.desktop-only {
+	@include laptop {
+		display: none !important;
+	}
+	@include tablet {
+		display: none !important;
+	}
+	@include mobile {
+		display: none !important;
+	}
+}
+.laptop-only {
+	@include desktop {
+		display: none !important;
+	}
+	@include tablet {
+		display: none !important;
+	}
+	@include mobile {
+		display: none !important;
+	}
+}
+.tablet-only {
+	@include desktop {
+		display: none !important;
+	}
+	@include laptop {
+		display: none !important;
+	}
+	@include mobile {
+		display: none !important;
+	}
+}
+.mobile-only {
+	@include desktop {
+		display: none !important;
+	}
+	@include laptop {
+		display: none !important;
+	}
+	@include tablet {
+		display: none !important;
+	}
+}
+
+// combined responsiveness
+.desktop-laptop-only {
+	@include mobile-tablet {
+		display: none !important;
+	}
+}
+.mobile-tablet-only {
+	@include desktop-laptop {
+		display: none !important;
+	}
+}
+
+// Hide elements
+.desktop-hide {
+	@include desktop {
+		display: none !important;
+	}
+}
+.laptop-hide {
+	@include laptop {
+		display: none !important;
+	}
+}
+.mobile-hide {
+	@include mobile {
+		display: none !important;
+	}
+}
+.tablet-hide {
+	@include tablet {
+		display: none !important;
+	}
+}

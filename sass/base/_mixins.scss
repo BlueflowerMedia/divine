@@ -5,7 +5,12 @@
   }
 }
 @mixin laptop {
-  @media (min-width: #{$laptop-breakpoint}) and (max-width: #{$desktop-breakpoint}) {
+  @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$laptop-breakpoint}) {
+    @content;
+  }
+}
+@mixin desktop-laptop {
+  @media (min-width: #{$tablet-breakpoint}) {
     @content;
   }
 }

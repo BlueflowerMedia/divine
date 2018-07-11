@@ -30,10 +30,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blueflowermedia' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav class="fixed">
+		<nav>
 		  <div class="nav-container">
 
-		    <div id="item1" class="nav-item left">
+		    <div id="item1" class="nav-item left desktop-laptop-only">
           <ul class="menu-partial">
       			<li><a class="main-items" href="<?php echo $aboutme; ?>">BIO</a></li>
       			<li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO</a></li>
@@ -44,21 +44,21 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
         </div>
 
-		    <div id="item3" class="nav-item right">
+		    <div id="item3" class="nav-item right desktop-laptop-only">
           <ul class="menu-partial">
         		<li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
         		<li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
         	</ul>
         </div>
-<!--
-        <div id="item4" class="nav-item right desktop-hide">
+
+        <div id="item4" class="nav-item right mobile-tablet-only">
           <div class="hamburger" id="hamburger-arrow-right">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
           </div>
         </div>
- -->
+
 		  </div>
 		</nav>
 
