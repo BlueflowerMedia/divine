@@ -9,10 +9,11 @@
 			text-decoration: none;
 			justify-content: center;
 	    li {
-				color: $gold;
-				margin: 0 20px ;
-				padding: 0 10px;
-				text-align: left;
+				margin: 0 5px ;
+				padding: 0 5px;
+				text-align: center;
+				list-style-type: none;
+				background-color: $gold;
 				a {
 					font-family: $font-primary;
 					text-decoration: none;
@@ -20,7 +21,7 @@
 					font-weight: 600;
 				}
 	      @include mobile {
-	        text-align: center;
+	        //text-align: center;
 	      }
 	    }
 	  }

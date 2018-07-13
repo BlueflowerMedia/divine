@@ -9,7 +9,6 @@
  * @package blueflowedmedia
  */
 
-
  $aboutme = get_permalink(get_page_by_path( 'aboutme' ));
  $portfolio = get_permalink(get_page_by_path( 'Portfolio' ));
  $services = get_permalink(get_page_by_path( 'services' ));
@@ -35,8 +34,8 @@
 
 		    <div id="item1" class="nav-item left desktop-laptop-only">
           <ul class="menu-partial">
-      			<li><a class="main-items" href="<?php echo $aboutme; ?>">BIO</a></li>
-      			<li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO</a></li>
+      			<li><a class="main-items" href="<?php echo $aboutme; ?>">BIOGRAPHY<svg><path></svg></a></li>
+      			<li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO<svg><path></svg></a></li>
       		</ul>
         </div>
 
@@ -46,12 +45,12 @@
 
 		    <div id="item3" class="nav-item right desktop-laptop-only">
           <ul class="menu-partial">
-        		<li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
-        		<li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
+        		<li><a class="main-items" href="<?php echo $services; ?>">SERVICES<svg><path></svg></a></li>
+        		<li><a class="main-items" href="<?php echo $contact; ?>">CONTACT<svg><path></svg></a></li>
         	</ul>
         </div>
 
-        <div id="item4" class="nav-item right mobile-tablet-only">
+        <div id="item4" class="nav-item right mobile-tablet-only hamburger-container">
           <div class="hamburger" id="hamburger-arrow-right">
             <span class="line"></span>
             <span class="line"></span>
@@ -63,11 +62,15 @@
 		</nav>
 
 		<div class="mobile-navbar right">
-      <ul>
-        <li>BIO</li>
-        <li>PORTFOLIO</li>
-        <li>SERVICES</li>
-        <li>CONTACT</li>
+
+      <div id="logo-hamburger" class="nav-item middle">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
+      </div>
+      <ul id="mobile-menu">
+        <li><a class="main-items" href="<?php echo $aboutme; ?>">BIO</a></li>
+        <li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO</a></li>
+        <li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
+        <li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
       </ul>
     </div>
 

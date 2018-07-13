@@ -1,8 +1,10 @@
-
+.hamburger-container {
+  z-index: 99999;
+}
 .hamburger .line{
   width: 25px;
   height: 3px;
-  background-color: red;
+  background-color: $black;
   display: block;
   margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
