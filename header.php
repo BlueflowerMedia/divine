@@ -61,7 +61,7 @@
 		  </div>
 		</nav>
 
-		<div class="mobile-navbar right">
+		<div class="container mobile-navbar right">
 
       <div id="logo-hamburger" class="nav-item middle">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
@@ -74,7 +74,4 @@
       </ul>
     </div>
 
-
 	</header>
-
-	<div id="content" class="site-content">

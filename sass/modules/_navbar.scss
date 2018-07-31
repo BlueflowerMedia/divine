@@ -16,7 +16,6 @@ nav {
   max-width: 1200px;
   box-sizing: border-box;
 
-
   .nav-item {
     display: flex;
     align-items: center;
@@ -33,13 +32,12 @@ nav {
     }
   }
 
-
   #item2 {
     a {
       text-decoration: none;
     }
     h3 {
-      min-width: 400px;
+      white-space: nowrap;
       font-size: 1.5rem;
       font-weight: 700;
       font-family: $font-primary;
@@ -97,8 +95,6 @@ ul.menu-partial > li > a {
   }
 }
 
-
-
 // Mobile navbar (or drop-down navbar)
 .mobile-navbar {
   @include position(fixed, $top:0, $left:0);
@@ -111,7 +107,7 @@ ul.menu-partial > li > a {
     transform: translateX(-100vw);
   }
   &.right {
-    transform: translateX(100vw);
+    transform: translateX(150vw);
   }
   &.top {
     transform: translateY(-100vh);

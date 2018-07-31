@@ -13,7 +13,7 @@
     img.white-triangle {
       @include position(absolute, $top: 0, $right: 0);
       transform: rotate(20deg);
-      height: 120%;
+      height: 100%;
     }
     i {
       color: $black;
@@ -31,14 +31,14 @@
   }
 
   .contact-map {
-    min-width: 280px;
+    min-width: 200px;
   }
   // part contact and map
 
   #contact-map .container {
     .contact-info,
     .contact-map {
-      min-width: 300px;
+      min-width: 200px;
     }
   }
 }
