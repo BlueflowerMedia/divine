@@ -20,214 +20,166 @@
 					font-size: 1rem;
 					font-weight: 600;
 				}
-	      @include mobile {
-	        //text-align: center;
-	      }
 	    }
 	  }
 	}
 }
 
+//////// common CSS for boxes
+.box-part-top {
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include mobile {
+		height: 200px
+	}
+	h1 {
+		background-color: white;
+		font-family: $font-primary;
+		font-size: 3rem;
+		display: inline-block;
+		padding: 3px 8px;
+	}
+}
+.box-part-pics {
+	@include mobile {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		padding: 20px;
+		margin: 0;
+	}
+	img {
+		height: 150px;
+		width: auto;
+		margin: 5px;
+		@include mobile {
+			&:nth-child(n+4) {
+				display: none;
+			}
+		}
+	}
+}
+.box-part-txt {
+	p {
+		@include mobile {
+			background-color: $gold;
+			padding: 20px;
+			margin: 0;
+		}
+	}
+}
+
+/////////  specific CSS for boxes
 #section-professional {
-	.pro-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
-	}
+  }
 }
-
-
 #section-id {
-	.id-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
-	}
+  }
 }
-
 #section-family {
-	.family-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
 	}
 }
-
 #section-wedding {
-	.wedding-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
 	}
 }
-
 #section-fine-art {
-	.fine-art-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
 	}
 }
-
 #section-photo-restoration {
-	.photo-restoration-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
 	}
 }
-
 #section-modelling {
-	.modelling-top {
-		height: 350px;
+	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		h1 {
-			background-color: white;
-			font-family: $font-primary;
-			font-size: 3rem;
-			display: inline-block;
-			padding: 3px 8px;
-		}
 	}
-	.part-down {
+	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
-		background-position: right;
-	}
-	.part-pics {
-		img {
-			height: 150px;
-			width: auto;
-			margin: 5px;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
 		}
 	}
 }
