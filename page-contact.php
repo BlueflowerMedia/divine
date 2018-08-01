@@ -6,7 +6,6 @@
     <div class="right flex-row">
 
       <div class="contact-information flex1">
-        <img class="white-triangle" src="<?php echo get_template_directory_uri(); ?>/images/triangle-top-bg.svg" alt="">
 
           <div class="flex-row">
             <i class="fas fa-map-marker-alt"></i>

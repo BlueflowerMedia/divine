@@ -8,13 +8,10 @@
   }
 
   .contact-information {
-    background-color: $gold;
+    background-image: url("./images/divine-bg2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    img.white-triangle {
-      @include position(absolute, $top: 0, $right: 0);
-      transform: rotate(20deg);
-      height: 100%;
-    }
     i {
       color: $black;
       font-size: 6rem;

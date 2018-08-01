@@ -54,6 +54,7 @@
 		width: auto;
 		margin: 5px;
 		@include mobile {
+			height: 120px;
 			&:nth-child(n+3) {
 				display: none;
 			}
@@ -92,7 +93,7 @@
 		background-image: url("./images/placeholders/home-portraits.jpg");
 	}
 	.box-part-down {
-		background-image: url("./images/triangle-bg.svg");
+		background-image: url("./images/triangle-bg-revers.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
@@ -124,7 +125,7 @@
 		background-image: url("./images/placeholders/home-portraits.jpg");
 	}
 	.box-part-down {
-		background-image: url("./images/triangle-bg.svg");
+		background-image: url("./images/triangle-bg-revers.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
@@ -156,7 +157,7 @@
 		background-image: url("./images/placeholders/home-portraits.jpg");
 	}
 	.box-part-down {
-		background-image: url("./images/triangle-bg.svg");
+		background-image: url("./images/triangle-bg-revers.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
