@@ -1664,6 +1664,8 @@ nav .nav-container #item3 {
   #section-services .container h1 {
     text-align: center; }
   #section-services .container .service-list ul {
+    padding: 0;
+    margin: 25px 0;
     justify-content: center; }
     #section-services .container .service-list ul li {
       margin: 0 5px;

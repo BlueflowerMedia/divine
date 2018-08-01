@@ -4,7 +4,7 @@
   <div class="container">
 		<h1>Services</h1>
 
-    <div class="service-list">
+    <div id="item-services" class="service-list">
       <ul class="list-items flex-row">
   			<li><a id="item-professional" href="#section-professional">Professional Portraits</a></li>
   			<li><a id="item-id" href="#section-id">ID Photos</a></li>
