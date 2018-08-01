@@ -72,6 +72,16 @@
         <li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
         <li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
       </ul>
-    </div>
+      <i class="fas fa-phone-volume">
+        <p>(416)686-2498</p>
+      </i>
 
+      <!-- Social media -->
+      <div class="social-icon flex1">
+					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" style="color:#3B5998"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color:#fb3958"></i></a>
+      </div>
+
+    </div>
 	</header>

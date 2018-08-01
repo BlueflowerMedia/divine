@@ -1556,7 +1556,9 @@ ul.menu-partial > li > a {
     transform: translate(15vw, 0); }
 
 .mobile-navbar li {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: 3rem;
+  font-weight: 600; }
   .mobile-navbar li a {
     text-decoration: none;
     margin: 0;
@@ -1651,7 +1653,8 @@ nav .nav-container #item3 {
 #section-about h2 {
   color: #EBE6C3; }
 #section-about .about-image {
-  padding: 5%; }
+  padding: 5%;
+  text-align: center; }
   #section-about .about-image img {
     width: 70%; }
 
@@ -1661,7 +1664,6 @@ nav .nav-container #item3 {
   #section-services .container h1 {
     text-align: center; }
   #section-services .container .service-list ul {
-    text-decoration: none;
     justify-content: center; }
     #section-services .container .service-list ul li {
       margin: 0 5px;
