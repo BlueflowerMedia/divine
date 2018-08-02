@@ -1,30 +1,48 @@
-#section-services .container {
-	padding: 0;
-	margin: 0;
-	h1 {
-		text-align: center;
-	}
-	.service-list {
-		ul {
-			padding: 0;
-			margin: 25px 0;
-			justify-content: center;
-	    li {
-				margin: 0 5px;
-				padding: 0 5px;
-				text-align: center;
-				list-style-type: none;
-				background-color: $gold;
-				a {
-					font-family: $font-primary;
-					text-decoration: none;
-					font-size: 1rem;
-					font-weight: 600;
-				}
-	    }
-	  }
+#section-services {
+	background: white;
+	.container {
+		padding: 0;
+		margin: 0;
+		h1 {
+			text-align: center;
+			transition: all 0.5s cubic-bezier(.6,0,.95,.55);
+		}
+		.service-list {
+			padding: 25px 0;
+			ul {
+				padding: 0;
+				margin: 0;
+				justify-content: center;
+
+		    li {
+					margin: 0 5px;
+					padding: 0 5px;
+					text-align: center;
+					list-style-type: none;
+					background-color: $gold;
+					a {
+						font-family: $font-primary;
+						text-decoration: none;
+						font-size: 1rem;
+						font-weight: 600;
+					}
+		    }
+		  }
+		}
 	}
 }
+#section-services.fixed {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	.container {
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 0;
+		}
+	}
+}
+
 
 //////// common CSS for boxes
 .box-part-top {

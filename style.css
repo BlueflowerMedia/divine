@@ -1658,26 +1658,39 @@ nav .nav-container #item3 {
   #section-about .about-image img {
     width: 70%; }
 
-#section-services .container {
-  padding: 0;
-  margin: 0; }
-  #section-services .container h1 {
-    text-align: center; }
-  #section-services .container .service-list ul {
+#section-services {
+  background: white; }
+  #section-services .container {
     padding: 0;
-    margin: 25px 0;
-    justify-content: center; }
-    #section-services .container .service-list ul li {
-      margin: 0 5px;
-      padding: 0 5px;
+    margin: 0; }
+    #section-services .container h1 {
       text-align: center;
-      list-style-type: none;
-      background-color: #EBE6C3; }
-      #section-services .container .service-list ul li a {
-        font-family: "Playfair Display", sans-serif;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 600; }
+      transition: all 0.5s cubic-bezier(0.6, 0, 0.95, 0.55); }
+    #section-services .container .service-list {
+      padding: 25px 0; }
+      #section-services .container .service-list ul {
+        padding: 0;
+        margin: 0;
+        justify-content: center; }
+        #section-services .container .service-list ul li {
+          margin: 0 5px;
+          padding: 0 5px;
+          text-align: center;
+          list-style-type: none;
+          background-color: #EBE6C3; }
+          #section-services .container .service-list ul li a {
+            font-family: "Playfair Display", sans-serif;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600; }
+
+#section-services.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw; }
+  #section-services.fixed .container h1 {
+    font-size: 2rem;
+    margin-bottom: 0; }
 
 .box-part-top {
   height: 350px;

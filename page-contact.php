@@ -24,7 +24,7 @@
       </div>
 
       <div class="contact-map flex2">
-        <iframe src="https://snazzymaps.com/embed/84088" width="100%" height="100%" style="border:none;"></iframe>
+        <iframe src="https://snazzymaps.com/embed/84088" width="100%" height="530px" style="border:none;"></iframe>
       </div>
 
     </div>
