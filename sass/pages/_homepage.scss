@@ -21,7 +21,7 @@
 
   .title img {
     @include position(absolute, $top: 0, $left: 0);
-    z-index: 12;
+    z-index: 1;
     margin: 65px 20px 0 20px;
     padding: 0;
     &::after {
@@ -38,6 +38,7 @@
 
   .txt-part {
     margin-top: 7%;
+    z-index: 9999;
   }
 
   // TEXT-ANIMATION: text-wrapper ----------
@@ -67,7 +68,6 @@
   .service-a-tag {
     background-color: $gold;
     font-size: 1.2em;
-    z-index: 1234;
     padding: 3px 8px;
   }
 
@@ -90,6 +90,4 @@
       height: 75%;
     }
   }
-
-
 }

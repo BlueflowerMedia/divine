@@ -1256,9 +1256,6 @@ span.big-dot {
 .right {
   text-align: right; }
 
-* {
-  z-index: 999; }
-
 .content {
   background: white; }
 
@@ -1593,7 +1590,7 @@ nav .nav-container #item3 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 12;
+    z-index: 1;
     margin: 65px 20px 0 20px;
     padding: 0; }
     #section-top .title img::after {
@@ -1604,7 +1601,8 @@ nav .nav-container #item3 {
     position: relative;
     height: 100%; }
   #section-top .txt-part {
-    margin-top: 7%; }
+    margin-top: 7%;
+    z-index: 9999; }
   #section-top .ml10 {
     font-size: 4em;
     margin-bottom: 100px; }
@@ -1625,7 +1623,6 @@ nav .nav-container #item3 {
   #section-top .service-a-tag {
     background-color: #EBE6C3;
     font-size: 1.2em;
-    z-index: 1234;
     padding: 3px 8px; }
   #section-top .photo-wrapper {
     width: 65%;
@@ -1667,7 +1664,10 @@ nav .nav-container #item3 {
       text-align: center;
       transition: all 0.5s cubic-bezier(0.6, 0, 0.95, 0.55); }
     #section-services .container .service-list {
-      padding: 25px 0; }
+      padding: 25px 0;
+      z-index: 99999; }
+      #section-services .container .service-list * {
+        z-index: 99999; }
       #section-services .container .service-list ul {
         padding: 0;
         margin: 0;
