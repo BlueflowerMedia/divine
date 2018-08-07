@@ -16,7 +16,7 @@ $(document).ready(function() {
 });
 
 // animate text
-// Wrap every letter in a span
+// Wrap every letter in a span (front-page)
 $('.ml10 .letters').each(function() {
 	$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
@@ -32,7 +32,24 @@ anime.timeline({
 		return 70 * i;
 	}
 })
-// Smoothly scroll to services after click
+
+// photo slider
+function runCarouselphoto() {
+	$(".photo-wrapper-slider").owlCarousel({
+		loop: true,
+		margin: 100,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: true,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+		nav: false,
+		responsiveClass: true,
+    items: 1,
+	})
+}
+
+// (page services) Smoothly scroll to services after click
 $('a[href^="#"]').on('click', function(event) {
 	var target = $(this.getAttribute('href'));
 	if (target.length) {
@@ -43,7 +60,7 @@ $('a[href^="#"]').on('click', function(event) {
 	}
 });
 
-// fixed div after scrolling to
+// (page services) fixed div after scrolling to
 function divScroll()
 {
 	var ourServices = $("#section-services");
@@ -64,7 +81,11 @@ function divScroll()
 		}
 	})
 }
-
-if (!isMobileDevice()) {
-	divScroll();
+if (pageName == "Divine") {
+  runCarouselphoto();
+}
+if (pageName == "services"){
+  if (!isMobileDevice()) {
+  	divScroll();
+  }
 }

@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'blueflowermedia_widgets_init' );
  */
 function blueflowermedia_scripts() {
 
-	// wp_enqueue_style( 'blueflowermedia-owlcarouselcss', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' );
+	wp_enqueue_style( 'blueflowermedia-owlcarouselcss', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' );
 
 	// wp_enqueue_style( 'blueflowermedia-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' );
 
@@ -134,9 +134,11 @@ function blueflowermedia_scripts() {
 
 
 	wp_enqueue_style( 'blueflowermedia-fontawesome', 'https://use.fontawesome.com/releases/v5.0.12/css/all.css' );
-	// wp_enqueue_script( 'blueflowermedia-scrollreveal', 'https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.4.0/scrollreveal.min.js', array(), '20151215', true );
 
-	// wp_enqueue_script( 'blueflowermedia-owlcarousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'blueflowermedia-scrollreveal', 'https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.4.0/scrollreveal.min.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'blueflowermedia-owlcarousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), '20151215', true );
+
 
 	// wp_enqueue_script( 'blueflowermedia-particlesjs', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
 

@@ -20,9 +20,21 @@
 					</a>
 			  </div>
 
-				<div class="photo-wrapper flex1">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/home-portraits.jpg" alt="">
-				</div>
+				<div class="photo-wrapper-slider flex1 row owl-carousel">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/1.jpg" alt="">
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/2.jpg" alt="">
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/3.jpg" alt="">
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/placeholders/4.jpg" alt="">
+					</div>
+			  </div>
+
 	  </div>
 
 </section>

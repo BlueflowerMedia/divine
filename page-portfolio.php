@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 
+<div class="portfolio-top">
 
 <?php
 if ( have_posts() ) {
@@ -15,7 +16,7 @@ if ( have_posts() ) {
 } // end if
 ?>
 
-
+</div>
 
 
 <?php get_footer(); ?>

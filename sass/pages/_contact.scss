@@ -6,12 +6,18 @@
       margin: 0 0 20px 0;
     }
   }
+  .contact-all {
+    @include mobile-tablet {
+      flex-flow: column;
+    }
+  }
 
   .contact-information {
     background-image: url("./images/divine-bg2.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 30px 0;
     i {
       color: $black;
       font-size: 6rem;
