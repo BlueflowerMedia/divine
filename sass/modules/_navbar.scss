@@ -14,11 +14,11 @@ nav {
   margin: 0 auto;
   max-width: 1200px;
   box-sizing: border-box;
+  padding-top: 25px;
 
   .nav-item {
     display: flex;
     align-items: center;
-    padding-top: 25px;
 
 		// aligning navbar items
     &.left {
@@ -28,7 +28,7 @@ nav {
       justify-content: center;
     }
     &.right {
-      justify-content: flex-start;
+      justify-content: flex-end;
     }
   }
 
@@ -54,6 +54,7 @@ nav {
     flex-flow: row;
     align-items: center;
     margin: 5px;
+    padding-left: 0;
       li {
         display: block;
         margin: 0 40px;
@@ -98,6 +99,7 @@ ul.menu-partial > li > a {
 // Mobile navbar (or drop-down navbar)
 .mobile-navbar {
   #mobile-header {
+    padding: 15% 0 7% 0;
     a {
       text-decoration: none;
     }
@@ -106,6 +108,9 @@ ul.menu-partial > li > a {
     font-size: 3rem;
     font-weight: 300;
     padding: 10px 0;
+  }
+  p {
+    font-size: 2rem;
   }
   @include position(fixed, $top:0, $left:0);
   width: 85%;
@@ -137,19 +142,23 @@ ul.menu-partial > li > a {
     li {
       list-style-type: none;
       padding: 10px 0;
-
       a {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
       	margin: 0;
       	cursor: pointer;
       }
     }
   }
+  .phone {
+    margin-top: 50px;
+  }
   .social-icon {
+    margin-top: 10px;
     i {
-      font-size: 4rem;
-      padding:  0 7px;
+      font-size: 2.5rem;
+      padding: 0 6px;
+      color: gery;
     }
   }
 }
@@ -157,6 +166,7 @@ ul.menu-partial > li > a {
 
 // Edit This to adjust different type of menu
 nav .nav-container {
+  //padding: 50px;
 	#item1 {
 		flex: 2;
 	}
@@ -170,6 +180,7 @@ nav .nav-container {
 
 // mobile menu background color change
 #mobile-bg-black {
+  pointer-events: none;
   @include position(absolute, $top:0, $left:0);
   background: rgba(0, 0, 0, 0);
   height: 100vh;

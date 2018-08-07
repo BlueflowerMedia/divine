@@ -68,18 +68,18 @@
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
       </div>
       <ul id="mobile-menu">
-        <li><a class="main-items" href="<?php echo $aboutme; ?>">BIO</a></li>
+        <li><a class="main-items" href="<?php echo $aboutme; ?>">BIOGRAPHY</a></li>
         <li><a class="main-items" href="<?php echo $portfolio; ?>">PORTFOLIO</a></li>
         <li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
         <li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
       </ul>
-      <i class="fas fa-phone-volume">   416 686 2498</i>
+      <p class="phone">PH: 416 686 2498</p>
 
       <!-- Social media -->
       <div class="social-icon flex1">
-					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:grey"></i></a>
-					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" style="color:grey"></i></a>
-					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color:grey"></i></a>
+					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
 
     </div>

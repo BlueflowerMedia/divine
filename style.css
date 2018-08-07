@@ -1375,18 +1375,23 @@ button.nav-contact {
 .hamburger-container {
   z-index: 99999; }
 
-.hamburger .line {
-  width: 25px;
-  height: 3px;
-  background-color: #191919;
-  display: block;
-  margin: 4px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+.hamburger {
+  padding: 10px; }
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #191919;
+    display: block;
+    margin: 4px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 .hamburger:hover {
   cursor: pointer; }
+
+#hamburger-arrow-right {
+  margin-right: 10px; }
 
 /* hamburger-cross */
 #hamburger-cross {
@@ -1474,17 +1479,17 @@ nav {
   flex-flow: row nowrap;
   margin: 0 auto;
   max-width: 1200px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 25px; }
   .nav-container .nav-item {
     display: flex;
-    align-items: center;
-    padding-top: 25px; }
+    align-items: center; }
     .nav-container .nav-item.left {
       justify-content: flex-start; }
     .nav-container .nav-item.middle {
       justify-content: center; }
     .nav-container .nav-item.right {
-      justify-content: flex-start; }
+      justify-content: flex-end; }
   .nav-container #item2 a {
     text-decoration: none; }
   .nav-container #item2 h3 {
@@ -1500,7 +1505,8 @@ nav {
     display: flex;
     flex-flow: row;
     align-items: center;
-    margin: 5px; }
+    margin: 5px;
+    padding-left: 0; }
     .nav-container .menu-partial li {
       display: block;
       margin: 0 40px;
@@ -1542,12 +1548,16 @@ ul.menu-partial > li > a {
   background: #EBE6C3;
   z-index: 9998;
   transition: transform 0.5s cubic-bezier(1, 0.01, 0.47, 0.99); }
-  .mobile-navbar #mobile-header a {
-    text-decoration: none; }
+  .mobile-navbar #mobile-header {
+    padding: 15% 0 7% 0; }
+    .mobile-navbar #mobile-header a {
+      text-decoration: none; }
   .mobile-navbar h3 {
     font-size: 3rem;
     font-weight: 300;
     padding: 10px 0; }
+  .mobile-navbar p {
+    font-size: 2rem; }
   .mobile-navbar.left {
     transform: translateX(-100vw); }
   .mobile-navbar.right {
@@ -1565,13 +1575,18 @@ ul.menu-partial > li > a {
     list-style-type: none;
     padding: 10px 0; }
     .mobile-navbar #mobile-menu li a {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 300;
       margin: 0;
       cursor: pointer; }
-  .mobile-navbar .social-icon i {
-    font-size: 4rem;
-    padding: 0 7px; }
+  .mobile-navbar .phone {
+    margin-top: 50px; }
+  .mobile-navbar .social-icon {
+    margin-top: 10px; }
+    .mobile-navbar .social-icon i {
+      font-size: 2.5rem;
+      padding: 0 6px;
+      color: gery; }
 
 nav .nav-container #item1 {
   flex: 2; }
@@ -1581,6 +1596,7 @@ nav .nav-container #item3 {
   flex: 2; }
 
 #mobile-bg-black {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1623,7 +1639,8 @@ nav .nav-container #item3 {
   #section-top .txt-wrapper {
     display: flex;
     position: relative;
-    height: 100%; }
+    height: 100%;
+    z-index: 1; }
   #section-top .txt-part {
     margin-top: 7%;
     z-index: 9999; }
@@ -1671,13 +1688,32 @@ nav .nav-container #item3 {
   background-image: url("./images/triangle-bg.svg");
   background-repeat: no-repeat;
   background-size: cover; }
-#section-about h2 {
-  color: #EBE6C3; }
-#section-about .about-image {
-  padding: 5%;
-  text-align: center; }
-  #section-about .about-image img {
-    width: 70%; }
+  #section-about .container .aboutme-content {
+    padding: 5%; }
+  @media (min-width: 760px) and (max-width: 1023px) {
+    #section-about .container .aboutme-content {
+      flex: 2; }
+    #section-about .container .about-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 760px) {
+    #section-about .container {
+      flex-flow: column; }
+      #section-about .container h1, #section-about .container h2 {
+        text-align: center;
+        margin-top: 0; }
+      #section-about .container p {
+        font-size: 1.2rem;
+        font-family: "Playfair Display", sans-serif; } }
+  #section-about .container h2 {
+    color: #EBE6C3; }
+  #section-about .container .about-image {
+    padding: 5%;
+    text-align: center; }
+    #section-about .container .about-image img {
+      width: 70%; }
 
 #section-services {
   background: white; }
