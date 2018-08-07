@@ -12,6 +12,7 @@ $(document).ready(function() {
 	$(".hamburger").click(function() {
 		$(this).toggleClass("is-active");
 		$(".mobile-navbar").toggleClass("drop");
+    $("#mobile-bg-black").toggleClass("active");
 	});
 });
 

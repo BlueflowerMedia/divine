@@ -26,6 +26,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+  <div id="mobile-bg-black"></div>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'blueflowermedia' ); ?></a>
 
 	<header id="masthead" class="site-header">
@@ -61,9 +62,9 @@
 		  </div>
 		</nav>
 
-		<div class="container mobile-navbar right">
+		<div class="mobile-navbar container right">
 
-      <div id="logo-hamburger" class="nav-item middle">
+      <div id="mobile-header" class="nav-item middle">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h3>DIVINE PHOTOGRAPHY</h3></a>
       </div>
       <ul id="mobile-menu">
@@ -72,15 +73,13 @@
         <li><a class="main-items" href="<?php echo $services; ?>">SERVICES</a></li>
         <li><a class="main-items" href="<?php echo $contact; ?>">CONTACT</a></li>
       </ul>
-      <i class="fas fa-phone-volume">
-        <p>(416)686-2498</p>
-      </i>
+      <i class="fas fa-phone-volume">   416 686 2498</i>
 
       <!-- Social media -->
       <div class="social-icon flex1">
-					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:red"></i></a>
-					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" style="color:#3B5998"></i></a>
-					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color:#fb3958"></i></a>
+					<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:grey"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" style="color:grey"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="color:grey"></i></a>
       </div>
 
     </div>
