@@ -159,6 +159,23 @@
 		}
 	}
 }
+#section-modelling {
+	.box-part-top {
+		background-image: url("./images/placeholders/home-portraits.jpg");
+	}
+	.box-part-down {
+		background-image: url("./images/triangle-bg.svg");
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 120%;
+		@include mobile {
+			display: block;
+			background: none;
+			padding: 0;
+		}
+	}
+}
+
 #section-fine-art {
 	.box-part-top {
 		background-image: url("./images/placeholders/home-portraits.jpg");
@@ -181,22 +198,6 @@
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg-revers.svg");
-		background-position: right;
-		background-repeat: no-repeat;
-		background-size: 120%;
-		@include mobile {
-			display: block;
-			background: none;
-			padding: 0;
-		}
-	}
-}
-#section-modelling {
-	.box-part-top {
-		background-image: url("./images/placeholders/home-portraits.jpg");
-	}
-	.box-part-down {
-		background-image: url("./images/triangle-bg.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;

@@ -1608,14 +1608,31 @@ nav .nav-container #item3 {
   #mobile-bg-black.active {
     background: rgba(0, 0, 0, 0.2); }
 
+@keyframes blackBoxMove {
+  0% {
+    width: 0px; }
+  100% {
+    width: 60%; } }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1; } }
+@keyframes fadeInBottom {
+  0% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0); } }
 #section-top {
   position: relative;
-  height: 96vh;
+  height: 89vh;
   padding: 0; }
   #section-top .black {
-    height: 75%;
+    height: 80%;
     width: 60%;
     background-color: #191919;
+    animation: blackBoxMove 1s ease-in-out;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1631,8 +1648,9 @@ nav .nav-container #item3 {
     top: 0;
     left: 0;
     z-index: 1;
-    margin: 65px 20px 0 20px;
-    padding: 0; }
+    margin: 15px 20px 0 20px;
+    padding: 0;
+    animation: fadeInLeft 1s ease-in-out; }
     #section-top .title img::after {
       width: 100%;
       padding: 0; }
@@ -1642,7 +1660,7 @@ nav .nav-container #item3 {
     height: 100%;
     z-index: 1; }
   #section-top .txt-part {
-    margin-top: 7%;
+    margin-top: 2%;
     z-index: 9999; }
   #section-top .ml10 {
     font-size: 4em;
@@ -1666,12 +1684,13 @@ nav .nav-container #item3 {
     font-size: 1.2em;
     padding: 3px 8px; }
   #section-top .photo-wrapper-slider {
-    width: 65%;
+    width: 67%;
     height: 80%;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 26%;
-    z-index: 123; }
+    z-index: 123;
+    animation: fadeInBottom 1s cubic-bezier(0.5, 0.51, 0.31, 1.02); }
     @media (min-width: 760px) and (max-width: 1023px) {
       #section-top .photo-wrapper-slider {
         left: 20%;
@@ -1841,6 +1860,19 @@ nav .nav-container #item3 {
       background: none;
       padding: 0; } }
 
+#section-modelling .box-part-top {
+  background-image: url("./images/placeholders/home-portraits.jpg"); }
+#section-modelling .box-part-down {
+  background-image: url("./images/triangle-bg.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 120%; }
+  @media (max-width: 760px) {
+    #section-modelling .box-part-down {
+      display: block;
+      background: none;
+      padding: 0; } }
+
 #section-fine-art .box-part-top {
   background-image: url("./images/placeholders/home-portraits.jpg"); }
 #section-fine-art .box-part-down {
@@ -1863,19 +1895,6 @@ nav .nav-container #item3 {
   background-size: 120%; }
   @media (max-width: 760px) {
     #section-photo-restoration .box-part-down {
-      display: block;
-      background: none;
-      padding: 0; } }
-
-#section-modelling .box-part-top {
-  background-image: url("./images/placeholders/home-portraits.jpg"); }
-#section-modelling .box-part-down {
-  background-image: url("./images/triangle-bg.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 120%; }
-  @media (max-width: 760px) {
-    #section-modelling .box-part-down {
       display: block;
       background: none;
       padding: 0; } }

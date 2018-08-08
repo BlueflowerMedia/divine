@@ -2,7 +2,7 @@
 
 <section id="section-top">
 
-		<div class="black"></div>
+		<div class="black appear"></div>
 
 		<div class="title">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/divine-bg.svg" alt="">

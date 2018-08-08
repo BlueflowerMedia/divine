@@ -10,9 +10,9 @@
   			<li><a id="item-id" href="#section-id">ID Photos</a></li>
 				<li><a id="item-family" href="#section-family">Family Portraits</a></li>
 				<li><a id="item-wedding" href="#section-wedding">Wedding Photography</a></li>
+        <li><a id="item-wedding" href="#section-modelling">Modelling</a></li>
         <li><a id="item-wedding" href="#section-fine-art">Fine Art Reproduction</a></li>
         <li><a id="item-wedding" href="#section-photo-restoration">Photo Restoration</a></li>
-        <li><a id="item-wedding" href="#section-modelling">Modelling</a></li>
   		</ul>
     </div>
 
@@ -92,6 +92,33 @@
 	</div>
 </section>
 
+<section id="section-modelling">
+  <div class="container box-part-top">
+    <h1>Modelling</h1>
+  </div>
+
+	<div class="container box-part-down flex-row">
+    <div class="box-part-pics flex1">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Destop824.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Divine.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_0192.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_3213 copy 1.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_3215 copy.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 1.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 2.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 3.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 4.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 5.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 6.jpg" alt="">
+
+    </div>
+    <div class="box-part-txt flex1">
+      <p class="p-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+	</div>
+</section>
+
+
 <section id="section-fine-art">
   <div class="container box-part-top">
     <h1>Fine Art Reproduction</h1>
@@ -131,31 +158,6 @@
 	</div>
 </section>
 
-<section id="section-modelling">
-  <div class="container box-part-top">
-    <h1>Modelling</h1>
-  </div>
-
-	<div class="container box-part-down flex-row">
-    <div class="box-part-pics flex1">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Destop824.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Divine.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_0192.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_3213 copy 1.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/IMG_3215 copy.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 1.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 2.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 3.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 4.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 5.jpg" alt="">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/Modelling/Mim 6.jpg" alt="">
-
-    </div>
-    <div class="box-part-txt flex1">
-      <p class="p-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-	</div>
-</section>
 
 
 <?php get_footer(); ?>
