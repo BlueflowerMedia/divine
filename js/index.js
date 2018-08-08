@@ -82,7 +82,7 @@ function divScroll()
 		}
 	})
 }
-if (pageName == "Divine") {
+if (pageName == "Divine" || pageName == "/") {
   runCarouselphoto();
 }
 if (pageName == "services"){
