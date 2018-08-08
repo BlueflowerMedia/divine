@@ -1741,7 +1741,7 @@ nav .nav-container #item3 {
     margin: 0; }
     #section-services .container h1 {
       text-align: center;
-      transition: all 0.5s cubic-bezier(0.6, 0, 0.95, 0.55); }
+      transition: all 0.2s linear; }
     #section-services .container .service-list {
       padding: 25px 0;
       z-index: 99999; }
@@ -1876,7 +1876,7 @@ nav .nav-container #item3 {
 #section-fine-art .box-part-top {
   background-image: url("./images/headers/services-fineart-header.jpg"); }
 #section-fine-art .box-part-down {
-  background-image: url("./images/triangle-bg.svg");
+  background-image: url("./images/triangle-bg-revers.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 120%; }
@@ -1889,7 +1889,7 @@ nav .nav-container #item3 {
 #section-photo-restoration .box-part-top {
   background-image: url("./images/headers/services-restoration-header.jpg"); }
 #section-photo-restoration .box-part-down {
-  background-image: url("./images/triangle-bg-revers.svg");
+  background-image: url("./images/triangle-bg.svg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 120%; }

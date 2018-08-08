@@ -5,7 +5,7 @@
 		margin: 0;
 		h1 {
 			text-align: center;
-			transition: all 0.5s cubic-bezier(.6,0,.95,.55);
+			transition: all 0.2s linear;
 		}
 		.service-list {
 			padding: 25px 0;
@@ -181,7 +181,7 @@
 		background-image: url("./images/headers/services-fineart-header.jpg");
 	}
 	.box-part-down {
-		background-image: url("./images/triangle-bg.svg");
+		background-image: url("./images/triangle-bg-revers.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
@@ -197,7 +197,7 @@
 		background-image: url("./images/headers/services-restoration-header.jpg");
 	}
 	.box-part-down {
-		background-image: url("./images/triangle-bg-revers.svg");
+		background-image: url("./images/triangle-bg.svg");
 		background-position: right;
 		background-repeat: no-repeat;
 		background-size: 120%;
