@@ -1632,7 +1632,7 @@ nav .nav-container #item3 {
     height: 80%;
     width: 60%;
     background-color: #191919;
-    animation: blackBoxMove 1s ease-in-out;
+    animation: blackBoxMove 2s ease-in-out;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1650,7 +1650,7 @@ nav .nav-container #item3 {
     z-index: 1;
     margin: 15px 20px 0 20px;
     padding: 0;
-    animation: fadeInLeft 1s ease-in-out; }
+    animation: fadeInLeft 2s ease-in-out; }
     #section-top .title img::after {
       width: 100%;
       padding: 0; }

@@ -9,7 +9,7 @@
     height: 80%;
     width: 60%;
     background-color: $black;
-    animation: blackBoxMove 1s ease-in-out;
+    animation: blackBoxMove 2s ease-in-out;
 
     @include position(absolute, $bottom: 0, $right: 0);
     z-index: -1;
@@ -26,7 +26,7 @@
     z-index: 1;
     margin: 15px 20px 0 20px;
     padding: 0;
-    animation: fadeInLeft 1s ease-in-out;
+    animation: fadeInLeft 2s ease-in-out;
     &::after {
       width: 100%;
       padding: 0;
