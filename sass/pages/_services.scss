@@ -94,10 +94,11 @@
 	}
 }
 
+$header-gradient: linear-gradient(rgba(0, 0, 0, 0.25) , rgba(0, 0, 0, 0.25));
 /////////  specific CSS for boxes
 #section-professional {
 	.box-part-top {
-		background-image: url("./images/headers/services-portrait-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-portrait-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
@@ -113,7 +114,7 @@
 }
 #section-id {
 	.box-part-top {
-		background-image: url("./images/headers/services-id-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-id-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg-revers.svg");
@@ -129,7 +130,7 @@
 }
 #section-family {
 	.box-part-top {
-		background-image: url("./images/headers/services-family-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-family-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
@@ -145,7 +146,7 @@
 }
 #section-wedding {
 	.box-part-top {
-		background-image: url("./images/headers/services-wedding-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-wedding-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg-revers.svg");
@@ -161,7 +162,7 @@
 }
 #section-modelling {
 	.box-part-top {
-		background-image: url("./images/headers/services-modelling-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-modelling-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");
@@ -178,7 +179,7 @@
 
 #section-fine-art {
 	.box-part-top {
-		background-image: url("./images/headers/services-fineart-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-fineart-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg-revers.svg");
@@ -194,7 +195,7 @@
 }
 #section-photo-restoration {
 	.box-part-top {
-		background-image: url("./images/headers/services-restoration-header.jpg");
+		background-image: $header-gradient, url("./images/headers/services-restoration-header.jpg");
 	}
 	.box-part-down {
 		background-image: url("./images/triangle-bg.svg");

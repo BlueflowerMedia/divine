@@ -1809,7 +1809,7 @@ nav .nav-container #item3 {
     margin: 0; } }
 
 #section-professional .box-part-top {
-  background-image: url("./images/headers/services-portrait-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-portrait-header.jpg"); }
 #section-professional .box-part-down {
   background-image: url("./images/triangle-bg.svg");
   background-position: right;
@@ -1822,7 +1822,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-id .box-part-top {
-  background-image: url("./images/headers/services-id-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-id-header.jpg"); }
 #section-id .box-part-down {
   background-image: url("./images/triangle-bg-revers.svg");
   background-position: right;
@@ -1835,7 +1835,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-family .box-part-top {
-  background-image: url("./images/headers/services-family-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-family-header.jpg"); }
 #section-family .box-part-down {
   background-image: url("./images/triangle-bg.svg");
   background-position: right;
@@ -1848,7 +1848,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-wedding .box-part-top {
-  background-image: url("./images/headers/services-wedding-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-wedding-header.jpg"); }
 #section-wedding .box-part-down {
   background-image: url("./images/triangle-bg-revers.svg");
   background-position: right;
@@ -1861,7 +1861,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-modelling .box-part-top {
-  background-image: url("./images/headers/services-modelling-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-modelling-header.jpg"); }
 #section-modelling .box-part-down {
   background-image: url("./images/triangle-bg.svg");
   background-position: right;
@@ -1874,7 +1874,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-fine-art .box-part-top {
-  background-image: url("./images/headers/services-fineart-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-fineart-header.jpg"); }
 #section-fine-art .box-part-down {
   background-image: url("./images/triangle-bg-revers.svg");
   background-position: right;
@@ -1887,7 +1887,7 @@ nav .nav-container #item3 {
       padding: 0; } }
 
 #section-photo-restoration .box-part-top {
-  background-image: url("./images/headers/services-restoration-header.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/headers/services-restoration-header.jpg"); }
 #section-photo-restoration .box-part-down {
   background-image: url("./images/triangle-bg.svg");
   background-position: right;
