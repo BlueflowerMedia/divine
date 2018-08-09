@@ -11,7 +11,7 @@
     </div>
 
 		<div class="about-image flex1">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/about-portrait.jpg" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/bio.jpg" alt="">
 		</div>
 
   </div>
