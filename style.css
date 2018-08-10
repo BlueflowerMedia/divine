@@ -1948,7 +1948,8 @@ nav .nav-container #item3 {
 .portfolio-top {
   padding: 20px 10%; }
 
-.PP_Masonry__sizer, .PP_Masonry__item {
-  width: 25%; }
+@media screen and (min-width: 1024px) {
+  .PP_Masonry__sizer, .PP_Masonry__item {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */
