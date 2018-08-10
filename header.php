@@ -10,7 +10,7 @@
  */
 
  $aboutme = get_permalink(get_page_by_path( 'aboutme' ));
- $portfolio = get_permalink(get_page_by_path( 'Portfolio' ));
+ $portfolio = get_permalink(get_page_by_path( 'portfolio/photos' ));
  $services = get_permalink(get_page_by_path( 'services' ));
  $contact = get_permalink(get_page_by_path( 'contact' ));
 
