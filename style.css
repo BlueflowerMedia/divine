@@ -1929,3 +1929,8 @@ nav .nav-container #item3 {
 
 .portfolio-top {
   padding: 20px 10%; }
+
+.PP_Masonry__sizer, .PP_Masonry__item {
+  width: 25% !important; }
+
+/*# sourceMappingURL=style.css.map */
